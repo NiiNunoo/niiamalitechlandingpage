@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
 body {
+    margin: 0px;
+    padding: 5px;
     background-color: #F2F2F2;
     font-family: 'Epilogue', sans-serif;
 }
@@ -139,6 +141,7 @@ left: 640px;
 top: 173px;
 z-index: -1;
 }
+
 
 
 .stats {
@@ -375,9 +378,13 @@ top: 6px;
       "bio"
       "footer";
     }
+
+    .phone2 {
+        display: none;
+    }
 }
 /*Tablet View*/
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /*@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .wrapper {
         height: 1962px;
     width: 768px;
@@ -390,13 +397,18 @@ top: 6px;
       "content"
       "bio"
       "footer";
-}
+}*/
 /*Mobile View*/
-@media screen and (max-device-width: 640px) {
-    .wrapper {
+@media screen and (max-device-width: 640px) 
+{
+    body {
         height: 2389px;
-    width: 375px;
-    display: grid;
+        width: 375px;
+    }
+    .wrapper {
+        margin: 0px;
+        height: 2389px;
+        width: 375px;
         grid-template-columns: auto;
         grid-template-rows: auto;
         justify-items: center;
@@ -407,5 +419,367 @@ top: 6px;
           "footer";
       }
 
-
+    
+    .header {
+        grid-area: header;
+        position: absolute;
+    width: 1108.85px;
+    height: 56px;
+    left: 16px;
+    top: 24px;
+    
+    }*
+    
+    .button {
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px;
+        letter-spacing: -0.14px;
+        color: #172339;
+        width: 150px;
+        height: 10px;
+        left: 120px;
+        right: 16px;
+        top: 0px;
+        bottom: 2317px;
+        background-color: #F2F2F2;
+        border: 2px solid black;
+        border-radius: 6px;
+        padding: 16px;
     }
+    
+    .button:hover {
+            transition-duration: 0.3s;
+            background-color: hsl(219deg, 43%, 16%);
+            color: white;
+            border-radius: 6px;
+            border: 2px solid black;
+    }
+    
+    .content {
+        grid-area: content;
+    }
+    
+    .path {
+        position: absolute;
+    width: 151.47px;
+    height: 19px;
+    left: 140px;
+    top: 128px;
+    bottom: 5%;
+    
+    }
+    
+    .heading1 {
+        position: absolute;
+    width: 343px;
+    height: 89px;
+    left: 0px;
+    top: 150px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 50px;
+    letter-spacing: -0.527778px;;
+    color: #172339;
+    
+    }
+    
+    .quote1 {
+        position: absolute;
+    width: 300px;
+    height: 84px;
+    left: 10px;
+    top: 250px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #49566D;
+    
+    }
+    
+    .button1 {
+        position: absolute;
+    height: 32px;
+    top: 365px;
+    left: 2px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: #FAF8F6;
+    border: 2px solid black;
+    background: #172339;
+    border-radius: 6px;
+    padding: 16px;
+    width: 256px;
+    text-align: center;
+    
+    }
+    
+    .button1:hover {
+            transition-duration: 0.4s;
+            background-image: linear-gradient(135deg, #a060ff, #cb30e3, #ffa84e);
+            color: black;
+            border-radius: 6px;
+            border-color: transparent;
+    }
+    
+    .phone {
+        display: none;
+        position: absolute;
+    width: 345px;
+    height: 240px;
+    left: 5px;
+    top: 500px;
+    z-index: -1;
+    }
+    
+    .phone2 {
+        position: absolute;
+    width: 345px;
+    height: 240px;
+    left: 0px;
+    top: 500px;
+    z-index: -1;
+    }
+
+    .stats {
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+    width: 190px;
+    height: 375px;
+    left: 75px;
+    top: 750px;
+    text-align: center;
+    }
+    
+    .stats stats1 {
+        position: absolute;
+    width: 343px;
+    height: 83px;
+    left: 17px;
+    top: 805px;
+    
+    }
+    
+    .stats stats2 {
+        position: absolute;
+        width: 190px;
+        height: 83px;
+        left: 16px;
+        top: 920px;
+    }
+    
+    .stats stats3 {
+        position: absolute;
+    width: 343px;
+    height: 83px;
+    left: 15px;
+    top: 1035px;
+    
+    }
+    
+    .stats h2 {
+        margin-bottom: 0%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: #172339;
+    }
+    
+    .stats h5 { 
+        margin-top: 0%;
+        margin-bottom: 0%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.5px;color: #49566D;
+    
+    }
+    
+    .bio {
+        grid-area: bio;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .jeremy {
+        position: absolute;
+    width: 252px;
+    height: 402px;
+    left: 50px;
+    top: 1174px;
+    }
+    
+    .blur {
+        display: none;
+        position: absolute;
+        z-index: -1;
+    width: 294px;
+    height: 294px;
+    left: 309px;
+    top: 1182px;
+    background: #DB65E2;
+    mix-blend-mode: normal;
+    opacity: 0.48;
+    filter: blur(135.914px);
+    }
+    
+    .curve {
+        position: absolute;
+    width: 64.05px;
+    height: 52px;
+    left: 120px;
+    top: 1610px;
+    border: 2px solid transparent;
+    }
+    
+    /*.description {
+        position: absolute;
+        width: 350px;
+        height: 369px;
+        left: 801px;
+        top: 1060px;
+    }*/
+    
+    .heading2 {
+        position: absolute;
+        height: 48px;
+        left: 50px;
+        top: 1680px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: #FAF8F6;
+    
+    }
+    
+    .quote2 {
+        position: absolute;
+        top: 1720px;
+        left: 20px;
+        width: 300px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: 0.1px;
+    color: #F3EDE7;
+    
+    }
+    
+    .sign1 {
+        position: absolute;
+    height: 32px;
+    left: 80px;
+    top: 1950px;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: #FAF8F6;
+    
+    }
+    
+    .sign2 {
+        position: absolute;
+    left: 120px;
+    top: 1980px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.5px;
+    color: #F3EDE7;
+    
+        
+    }
+    
+    .box {
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        z-index: -2;
+    width: 340px;
+    height: 748px;
+    left: 0px;
+    top: 1350px;
+    background: #172339;
+    border-radius: 15px;
+    }
+    
+    .footer {
+        /*grid-area: footer;*/
+        position: absolute;
+        width: 400px;
+    height: 420px;
+    left: 0px;
+    top: 1969px;
+    }
+    
+    .footlogo {
+        position: absolute;
+    height: 32px;
+    left: 130px;
+    top: 190px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.444444px;
+    color: #172339;
+    }
+    
+    .foottext {
+        position: absolute;
+    height: 40px;
+    width: 150px;
+    top: 255px;
+    left: 100px;
+    text-align: center;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.0833333px;
+    color: #49566D;
+    
+    }
+    
+    .footicons {
+        position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 110px;
+    top: 320px;
+    }
+    
+    .footicons a {
+        padding: 10px;
+    
+    }
+      
+}

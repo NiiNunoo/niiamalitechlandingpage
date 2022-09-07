@@ -382,28 +382,413 @@ top: 6px;
     .phone2 {
         display: none;
     }
+
+    .jeremy1 {
+        display: none;
+    }
 }
+
 /*Tablet View*/
-  /*@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .wrapper {
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
         height: 1962px;
-    width: 768px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-items: center;
-    grid-template-areas:
-      "header"
-      "content"
-      "bio"
-      "footer";
-}*/
+        width: 768px;
+    }
+    .wrapper {
+        margin: 0px;
+        height: 1962px;
+        width: 768px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-items: center;
+        grid-template-areas:
+          "header"
+          "content"
+          "bio"
+          "footer";
+      }
+
+    
+    .header {
+        grid-area: header;
+        position: absolute;
+    width: 689px;
+    height: 56px;
+    left: 16px;
+    top: 24px;
+    
+    }
+    
+    .button {
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        line-height: 24px;
+        letter-spacing: -0.14px;
+        color: #172339;
+        width: 200px;
+        height: 15px;
+        left: 470px;
+        right: 60px;
+        top: 0px;
+        bottom: 2317px;
+        background-color: #F2F2F2;
+        border: 2px solid black;
+        border-radius: 6px;
+        padding: 16px;
+    }
+    
+    .button:hover {
+            transition-duration: 0.3s;
+            background-color: hsl(219deg, 43%, 16%);
+            color: white;
+            border-radius: 6px;
+            border: 2px solid black;
+    }
+    
+    .content {
+        padding: 0px;
+        margin: 0px;
+        grid-area: content;
+    }
+    
+    .path {
+        position: absolute;
+    width: 231.19px;
+    height: 29px;
+    left: 262px;
+    top: 218.68px;
+    bottom: 5%;
+    
+    }
+    
+    .heading1 {
+        position: absolute;
+    width: 530px;
+    height: 129px;
+    left: 39px;
+    top: 264px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.777778px;;
+    color: #172339;
+    
+    }
+    
+    .quote1 {
+        position: absolute;
+    width: 370px;
+    height: 84px;
+    left: 39px;
+    top: 433px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.888889px;
+    color: #49566D;
+    
+    }
+    
+    .button1 {
+        position: absolute;
+    height: 32px;
+    top: 557px;
+    left: 39.5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: #FAF8F6;
+    border: 2px solid black;
+    background: #172339;
+    border-radius: 6px;
+    padding: 16px;
+    width: 256px;
+    text-align: center;
+    
+    }
+    
+    .button1:hover {
+            transition-duration: 0.4s;
+            background-image: linear-gradient(135deg, #a060ff, #cb30e3, #ffa84e);
+            color: black;
+            border-radius: 6px;
+            border-color: transparent;
+    }
+    
+    .phone {
+        position: absolute;
+    width: 281px;
+    height: 482px;
+    left: 447px;
+    top: 176px;
+    z-index: -1;
+    }
+    
+    .phone2 {
+        display: none;
+        position: absolute;
+    width: 345px;
+    height: 240px;
+    left: 0px;
+    top: 500px;
+    z-index: -1;
+    }
+
+    .stats {
+        
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+    width: 689px;
+    height: 83px;
+    left: 39px;
+    top: 0px;
+    text-align: center;
+    }
+    
+    .stats1 {
+        position: absolute;
+    width: 200px;
+    height: 83px;
+    left: 50px;
+    top: 746px;
+    
+    }
+    
+    .stats2 {
+        position: absolute;
+        width: 200px;
+        height: 83px;
+        left: 250px;
+        top: 746px;
+    }
+    
+    .stats3 {
+        position: absolute;
+    width: 200px;
+    height: 83px;
+    left: 450px;
+    top: 746px;
+    
+    }
+    
+    .stats h2 {
+        margin-bottom: 0%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: #172339;
+    }
+    
+    .stats h5 { 
+        margin-top: 0%;
+        margin-bottom: 0%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.5px;color: #49566D;
+    
+    }
+    
+    .bio {
+        grid-area: bio;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .jeremy1 {
+        position: absolute;
+        width: 252px;
+        height: 402px;
+        left: 267px;
+        top: 950px;
+        }
+
+    .jeremy {
+        display: none;
+        position: absolute;
+    width: 252px;
+    height: 402px;
+    left: 50px;
+    top: 1174px;
+    }
+    
+    .blur {
+        position: absolute;
+        z-index: -1;
+    width: 179px;
+    height: 179px;
+    left: 288px;
+    top: 1099px;
+    background: #DB65E2;
+    mix-blend-mode: normal;
+    opacity: 0.48;
+    filter: blur(135.914px);
+    }
+    
+    .curve {
+        position: absolute;
+    width: 49.27px;
+    height: 40px;
+    left: 359px;
+    top: 1380px;
+    border: 2px solid transparent;
+    }
+    
+    /*.description {
+        position: absolute;
+        width: 350px;
+        height: 369px;
+        left: 801px;
+        top: 1060px;
+    }*/
+    
+    .heading2 {
+        position: absolute;
+        height: 48px;
+        left: 265px;
+        top: 1440px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: #FAF8F6;
+    
+    }
+    
+    .quote2 {
+        position: absolute;
+        top: 1500px;
+        left: 97px;
+        width: 573px;
+        height: 96px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: 0.1px;
+    color: #F3EDE7;
+    
+    }
+    
+    .sign1 {
+        position: absolute;
+    height: 32px;
+    left: 290px;
+    top: 1650px;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: #FAF8F6;
+    
+    }
+    
+    .sign2 {
+        position: absolute;
+    left: 330px;
+    top: 1680px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 2.5px;
+    color: #F3EDE7;
+    
+        
+    }
+    
+    .box {
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        z-index: -2;
+    width: 689px;
+    height: 684px;
+    left: 39px;
+    top: 1125px;
+    background: #172339;
+    border-radius: 15px;
+    }
+    
+    .footer {
+        /*grid-area: footer;*/
+        position: absolute;
+        width: 589px;
+    height: 420px;
+    left: 0px;
+    top: 1700px;
+    }
+    
+    .footlogo {
+        position: absolute;
+    height: 32px;
+    left: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.444444px;
+    color: #172339;
+    }
+    
+    .foottext {
+        position: absolute;
+    height: 40px;
+    width: 150px;
+    top: 195px;
+    left: 310px;
+    text-align: center;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.0833333px;
+    color: #49566D;
+    
+    }
+    
+    .footicons {
+        position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 610px;
+    top: 200px;
+    }
+    
+    .footicons a {
+        padding: 10px;
+    
+    }
+}
+
+
 /*Mobile View*/
 @media screen and (max-device-width: 640px) 
 {
     body {
         height: 2389px;
-        width: 375px;
+        width: 350px;
     }
     .wrapper {
         margin: 0px;
@@ -617,7 +1002,16 @@ top: 6px;
         padding: 0px;
     }
     
+.jeremy1 {
+    position: absolute;
+    width: 252px;
+    height: 402px;
+    left: 50px;
+    top: 1174px;
+    }
+
     .jeremy {
+        display: none;
         position: absolute;
     width: 252px;
     height: 402px;
@@ -735,7 +1129,7 @@ top: 6px;
     height: 420px;
     left: 0px;
     top: 1969px;
-    }
+        }
     
     .footlogo {
         position: absolute;
